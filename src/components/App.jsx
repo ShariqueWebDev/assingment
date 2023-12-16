@@ -5,20 +5,18 @@ import {FaRegQuestionCircle} from "react-icons/fa"
 import {FaTrophy} from "react-icons/fa"
 import {CiTimer} from "react-icons/ci"
 import ExpireCard from './expireCard/ExpireCard'
-import LiveCard from './liveCard/LiveCard'
-import NextCard from './nextCard/NextCard'
 
 const App = () => {
   return (
-    <div className='w-full '>
-      <div className="header-container flex justify-between w-full ">
+    <div className='max-w-[1360px] mx-auto w-full  '>
+      <div className="header-container flex justify-between w-full flex-wrap items-center max-[768px]:flex-col gap-2  ">
             <div className="flex items-center relative">
                 <div className="absolute left-[-20px]">
                     <img src="/main-logo.png" alt="" />
                 </div>
                 <div className="bg-white text-[#361d6a] p-[7px] pl-8 rounded-[25px] font-extrabold text-[20px]  flex items-center gap-2">BNBUSD <span className='text-[14px]'>$228.5332</span></div>
             </div>
-            <div className="flex items-center relative translate-x-1/2">
+            <div className="flex items-center relative translate-x-1/2 max-[768px]:translate-x-0 ">
                 <div className="bg-white p-[9px] rounded-[20px] w-[65px] text-[#1fc7d3] text-[18px]">
                     <FaArrowLeft/>
                 </div>
@@ -53,8 +51,6 @@ const App = () => {
       </div>
       <div className="flex pt-20 max-w-[1360px] mx-auto justify-center items-center">
         <ExpireCard />
-        <LiveCard />
-        <NextCard/>
       </div>
     </div>
   )
